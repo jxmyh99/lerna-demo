@@ -1,6 +1,17 @@
 {
   "name": "root",
   "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "command": {
+    "run": {
+      "npmClient": "yarn"
+    }
+  },
+  "workspaces": [
+    "project/*"
+  ],
   "devDependencies": {
     "lerna": "^4.0.0"
   }
